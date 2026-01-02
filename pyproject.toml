@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "worldseed-lint"
+version = "0.1.0"
+description = "Reference implementation of WorldSeed-Lint"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+
+authors = [
+  { name = "WorldSeed Authors" }
+]
+
+dependencies = [
+  "jsonschema>=4.0"
+]
+
+
+[project.scripts]
+worldseed-lint = "cli.main:main"
+
+
+[tool.setuptools]
+packages = [
+  "cli",
+  "engine",
+  "rules",
+  "rules.axioms",
+  "rules.features",
+  "rules.profiles",
+  "rules.consistency",
+  "mapping",
+  "tests",
+  "tests.conformance",
+]

@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "profile": "L2",
+
+  "world": {
+    "id": "550e8400-e29b-41d4-a716-446655440000"
+  },
+
+  "ontology": {
+    "entities": ["position"]
+  },
+
+  "observers": [
+    {
+      "name": "camera",
+      "operator": "pinhole",
+      "noise": {
+        "value": "unknown",
+        "unit": "pixel",
+        "uncertainty": "unknown",
+        "provenance": "sensor"
+      }
+    }
+  ]
+}
